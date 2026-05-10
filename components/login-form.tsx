@@ -58,9 +58,9 @@ export function LoginForm({
 
       const role = responseData?.role as string;
       if (role === "admin") {
-        router.replace(`/admin/home`);
+        router.replace(`dashboard`);
       } else {
-        router.replace(`/user/home`);
+        router.replace(`dashboard`);
       }
     } catch (error) {
       console.log(error);
